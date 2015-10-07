@@ -1,8 +1,12 @@
 var Frame = function() {
-  this.score = 0;
-
+  this.total = 0;
+  this.pins = 10;
 };
 
-Frame.prototype.score = function() {
-  this.score
-}
+Frame.prototype.total = function() {
+  this.total = this.total;
+};
+
+Frame.prototype.bowl = function(pinsHit) {
+  this.pins = (this.pins - pinsHit);
+};
